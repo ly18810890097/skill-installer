@@ -1,0 +1,32 @@
+{
+  "agents": {
+    "trae": {
+      "label": "Trae",
+      "global_dir": "~/.trae-cn/skills",
+      "project_dir": ".trae/skills",
+      "layout": "folder",
+      "doc": "全局：%userprofile%\\.trae-cn\\skills\\<slug>\\SKILL.md；项目：项目\\.trae\\skills\\<slug>\\SKILL.md"
+    },
+    "reasonix": {
+      "label": "Reasonix",
+      "global_dir": "~/.reasonix/skills",
+      "project_dir": ".reasonix/skills",
+      "layout": "single_md",
+      "doc": "全局：%userprofile%\\.reasonix\\skills\\<slug>.md；项目：项目\\.reasonix\\skills\\<slug>.md（单 .md 文件，非文件夹）"
+    },
+    "opencode": {
+      "label": "OpenCode",
+      "global_dir": "~/.config/opencode/skills",
+      "project_dir": ".opencode/skills",
+      "layout": "folder",
+      "doc": "全局：%userprofile%\\.config\\opencode\\skills\\<slug>\\SKILL.md；项目：项目\\.opencode\\skills\\<slug>\\SKILL.md"
+    },
+    "qoder": {
+      "label": "Qoder (CN)",
+      "global_dir": "~/.qoder-cn/skills",
+      "project_dir": ".qoder/skills",
+      "layout": "folder",
+      "doc": "全局：%userprofile%\\.qoder-cn\\skills\\<slug>\\SKILL.md；项目：项目\\.qoder\\skills\\<slug>\\SKILL.md（CN 版用户级为 .qoder-cn）"
+    }
+  }
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkillHub Skill Installer</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header>
+    <h1>SkillHub Skill Installer</h1>
+    <div id="health" class="health">检查 skillhub 中…</div>
+  </header>
+
+  <main>
+    <!-- 搜索区 -->
+    <section class="search-bar">
+      <input id="q" type="text" placeholder="搜索技能，例如：code review / pdf / 数据分析"
+             autocomplete="off">
+      <button id="btn-search">搜索</button>
+      <button id="btn-browse-rankings" class="btn-secondary">浏览榜单</button>
+      <div id="search-status" class="status"></div>
+    </section>
+
+    <!-- 结果列表 -->
+    <section id="results" class="results"></section>
+  </main>
+
+  <!-- 安装弹窗 -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-card">
+      <h2 id="modal-title">安装技能</h2>
+      <div id="modal-desc" class="modal-desc"></div>
+
+      <label>目标 Agent</label>
+      <select id="m-agent"></select>
+
+      <label>作用域</label>
+      <div class="radio-row">
+        <label><input type="radio" name="scope" value="global" checked> 全局（所有项目）</label>
+        <label><input type="radio" name="scope" value="project"> 项目级</label>
+      </div>
+
+      <div id="project-input" class="project-input hidden">
+        <label>项目根目录（绝对路径）</label>
+        <input id="m-project" type="text" placeholder="D:\your\project">
+      </div>
+
+      <div class="modal-actions">
+        <button id="btn-cancel">取消</button>
+        <button id="btn-install" class="primary">安装</button>
+      </div>
+      <div id="install-status" class="status"></div>
+    </div>
+  </div>
+
+  <!-- 榜单视图 -->
+  <div id="rankings-overlay" class="overlay hidden">
+    <div class="overlay-content">
+      <div class="overlay-header">
+        <h2>技能榜单</h2>
+        <button id="rankings-close" class="btn-close">×</button>
+      </div>
+      <div class="board-tabs">
+        <button class="board-tab active" data-board="hot">🔥 热门</button>
+        <button class="board-tab" data-board="featured">⭐ 精选</button>
+        <button class="board-tab" data-board="newest">🆕 最新</button>
+        <button class="board-tab" data-board="recommended">👍 推荐</button>
+        <button class="board-tab" data-board="trending">📈 趋势</button>
+      </div>
+      <div id="rankings-body" class="rankings-body"></div>
+    </div>
+  </div>
+
+  <footer>
+    <small>数据源：skillhub CLI · 仅本机运行</small>
+  </footer>
+
+  <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
