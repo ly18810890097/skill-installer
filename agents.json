@@ -27,6 +27,27 @@
       "project_dir": ".qoder/skills",
       "layout": "folder",
       "doc": "全局：%userprofile%\\.qoder-cn\\skills\\<slug>\\SKILL.md；项目：项目\\.qoder\\skills\\<slug>\\SKILL.md（CN 版用户级为 .qoder-cn）"
+    },
+    "claude_code": {
+      "label": "Claude Code",
+      "global_dir": "~/.claude/skills",
+      "project_dir": ".claude/skills",
+      "layout": "folder",
+      "doc": "全局：%userprofile%\\.claude\\skills\\<slug>\\SKILL.md；项目：项目\\.claude\\skills\\<slug>\\SKILL.md（Anthropic 官方 CLI）"
+    },
+    "codex": {
+      "label": "Codex (OpenAI)",
+      "global_dir": "~/.agents/skills",
+      "project_dir": ".agents/skills",
+      "layout": "folder",
+      "doc": "全局：%userprofile%\\.agents\\skills\\<slug>\\SKILL.md；项目：项目\\.agents\\skills\\<slug>\\SKILL.md（OpenAI Codex CLI 用户级 $HOME/.agents/skills）"
+    },
+    "codebuddy": {
+      "label": "CodeBuddy Code",
+      "global_dir": "~/.codebuddy/skills",
+      "project_dir": ".codebuddy/skills",
+      "layout": "folder",
+      "doc": "全局：%userprofile%\\.codebuddy\\skills\\<slug>\\SKILL.md；项目：项目\\.codebuddy\\skills\\<slug>\\SKILL.md（腾讯云 AI 代码助手）"
     }
   }
 }
