@@ -1,6 +1,6 @@
 # 🛠️ SkillHub Installer
 
-> 一站式搜索、浏览、安装 SkillHub 商店技能到本地 AI Agent（Trae / Reasonix / OpenCode / Qoder）。
+> 一站式搜索、浏览、安装 SkillHub 商店技能到本地 AI Agent（Cursor / Claude Code / GitHub Copilot / Windsurf / Gemini CLI 等 15+ 主流 Agent）。
 
 在浏览器里搜索 8 万+ AI 技能，查看热度榜单，一键安装到你常用的 AI Agent 目录，省去手敲 CLI 和翻路径的麻烦。
 
@@ -12,7 +12,7 @@
 - 📊 **热度指标**：每个技能显示下载量、星标数、榜单排名（热门/精选/最新/推荐/趋势）
 - 🏆 **榜单浏览**：5 个榜单 Tab 切换查看，点击搜索结果的榜单标签直接跳转高亮
 - 🎯 **智能排序**：搜索结果自动把上榜的技能按 score 降序前置，冷门技能在后
-- 📦 **多 Agent 支持**：Trae / Reasonix / OpenCode / Qoder / Claude Code / Codex / CodeBuddy，零代码扩展
+- 📦 **多 Agent 支持**：Cursor / Claude Code / GitHub Copilot / Windsurf / Gemini CLI / Codex / Trae / Cline / CodeBuddy / Amp / Continue / Roo Code / OpenCode / Qoder / Reasonix，零代码扩展
 - 🌐 **作用域可选**：全局安装（所有项目可用）或项目级安装（仅当前项目）
 - 🚀 **国内加速**：数据源走 skillhub CLI（api.skillhub.cn + 腾讯云 COS），国内访问快
 - 🧩 **极简依赖**：仅 Flask 一个第三方包，无 Node/DB/构建工具
@@ -95,15 +95,37 @@ skill-installer/
 
 ## 🎯 支持的 Agent
 
+> 覆盖 15+ 主流 AI 编程工具，新增 Agent 只需改 `agents.json`，无需改代码。
+
+### Tier 1：原生集成（官方核心支持）
+
 | Agent | 全局目录 | 项目目录 | 布局 |
 |-------|----------|----------|------|
-| Trae | `~/.trae-cn/skills` | `.trae/skills` | 文件夹 |
-| Reasonix | `~/.reasonix/skills` | `.reasonix/skills` | 单 .md 文件 |
-| OpenCode | `~/.config/opencode/skills` | `.opencode/skills` | 文件夹 |
-| Qoder (CN) | `~/.qoder-cn/skills` | `.qoder/skills` | 文件夹 |
+| Cursor | `~/.cursor/skills` | `.cursor/skills` | 文件夹 |
 | Claude Code | `~/.claude/skills` | `.claude/skills` | 文件夹 |
+| GitHub Copilot | `~/.copilot/skills` | `.github/skills` | 文件夹 |
+| Gemini CLI | `~/.gemini/skills` | `.gemini/skills` | 文件夹 |
 | Codex (OpenAI) | `~/.agents/skills` | `.agents/skills` | 文件夹 |
+
+### Tier 2：社区 / 第三方集成
+
+| Agent | 全局目录 | 项目目录 | 布局 |
+|-------|----------|----------|------|
+| Windsurf | `~/.codeium/windsurf/skills` | `.windsurf/skills` | 文件夹 |
+| Cline | `~/.cline/skills` | `.cline/skills` | 文件夹 |
+| Amp (Sourcegraph) | `~/.config/agents/skills` | `.agents/skills` | 文件夹 |
+| Continue.dev | `~/.continue/skills` | `.continue/skills` | 文件夹 |
+| Roo Code | `~/.roo/skills` | `.roo/skills` | 文件夹 |
+| OpenCode | `~/.config/opencode/skills` | `.opencode/skills` | 文件夹 |
+
+### Tier 3：国内 / 小众 Agent
+
+| Agent | 全局目录 | 项目目录 | 布局 |
+|-------|----------|----------|------|
+| Trae / Trae CN | `~/.trae-cn/skills` | `.trae/skills` | 文件夹 |
+| Qoder (CN) | `~/.qoder-cn/skills` | `.qoder/skills` | 文件夹 |
 | CodeBuddy Code | `~/.codebuddy/skills` | `.codebuddy/skills` | 文件夹 |
+| Reasonix | `~/.reasonix/skills` | `.reasonix/skills` | 单 .md 文件 |
 
 ### 新增 Agent
 

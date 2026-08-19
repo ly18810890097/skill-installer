@@ -48,6 +48,62 @@
       "project_dir": ".codebuddy/skills",
       "layout": "folder",
       "doc": "全局：%userprofile%\\.codebuddy\\skills\\<slug>\\SKILL.md；项目：项目\\.codebuddy\\skills\\<slug>\\SKILL.md（腾讯云 AI 代码助手）"
+    },
+    "cursor": {
+      "label": "Cursor",
+      "global_dir": "~/.cursor/skills",
+      "project_dir": ".cursor/skills",
+      "layout": "folder",
+      "doc": "全局：%userprofile%\\.cursor\\skills\\<slug>\\SKILL.md；项目：项目\\.cursor\\skills\\<slug>\\SKILL.md（Anysphere 出品的主流 AI IDE，v2.4+ 完整支持 Skills，向后兼容读取 ~/.claude/skills/）"
+    },
+    "windsurf": {
+      "label": "Windsurf",
+      "global_dir": "~/.codeium/windsurf/skills",
+      "project_dir": ".windsurf/skills",
+      "layout": "folder",
+      "doc": "全局：%userprofile%\\.codeium\\windsurf\\skills\\<slug>\\SKILL.md；项目：项目\\.windsurf\\skills\\<slug>\\SKILL.md（Codeium 出品，Cascade 智能体，免费方案完整）"
+    },
+    "copilot": {
+      "label": "GitHub Copilot",
+      "global_dir": "~/.copilot/skills",
+      "project_dir": ".github/skills",
+      "layout": "folder",
+      "doc": "全局：%userprofile%\\.copilot\\skills\\<slug>\\SKILL.md；项目：项目\\.github\\skills\\<slug>\\SKILL.md（Microsoft/GitHub 官方，2026 初正式支持 Agent Skills，兼容读取 .claude/skills、.agents/skills）"
+    },
+    "gemini_cli": {
+      "label": "Gemini CLI",
+      "global_dir": "~/.gemini/skills",
+      "project_dir": ".gemini/skills",
+      "layout": "folder",
+      "doc": "全局：%userprofile%\\.gemini\\skills\\<slug>\\SKILL.md；项目：项目\\.gemini\\skills\\<slug>\\SKILL.md（Google 官方 CLI，内置 /skills 命令管理，支持 gemini skills install）"
+    },
+    "cline": {
+      "label": "Cline",
+      "global_dir": "~/.cline/skills",
+      "project_dir": ".cline/skills",
+      "layout": "folder",
+      "doc": "全局：%userprofile%\\.cline\\skills\\<slug>\\SKILL.md；项目：项目\\.cline\\skills\\<slug>\\SKILL.md（VS Code 开源扩展，社区维护，MCP + Skills 并行，亦读取 .agents/skills/）"
+    },
+    "amp": {
+      "label": "Amp (Sourcegraph)",
+      "global_dir": "~/.config/agents/skills",
+      "project_dir": ".agents/skills",
+      "layout": "folder",
+      "doc": "全局：%userprofile%\\.config\\agents\\skills\\<slug>\\SKILL.md；项目：项目\\.agents\\skills\\<slug>\\SKILL.md（Sourcegraph 出品，使用通用 .agents/skills 目录）"
+    },
+    "continue": {
+      "label": "Continue.dev",
+      "global_dir": "~/.continue/skills",
+      "project_dir": ".continue/skills",
+      "layout": "folder",
+      "doc": "全局：%userprofile%\\.continue\\skills\\<slug>\\SKILL.md；项目：项目\\.continue\\skills\\<slug>\\SKILL.md（开源 AI 代码助手，VS Code / JetBrains 插件，自定义指令串接技能）"
+    },
+    "roo_code": {
+      "label": "Roo Code",
+      "global_dir": "~/.roo/skills",
+      "project_dir": ".roo/skills",
+      "layout": "folder",
+      "doc": "全局：%userprofile%\\.roo\\skills\\<slug>\\SKILL.md；项目：项目\\.roo\\skills\\<slug>\\SKILL.md（VS Code 扩展，内建 skills 系统，支持 AGENTS.md）"
     }
   }
 }
